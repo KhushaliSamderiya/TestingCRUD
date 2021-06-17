@@ -1,0 +1,73 @@
+:root{
+    --primary-color: #FCA5A5;
+    --primary-white: white;
+}
+header{
+    background-image: none;
+    height: 20vh;
+}
+.navigation {
+    background-color: var(--primary-white);
+    /* color: white; */
+    /* padding: 2rem; */
+    border-bottom-left-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border: 1px solid #E7E5E4;
+}
+
+.navigation .link, .nav-brand {
+    color: black;
+}
+
+section{
+    padding: 1rem;
+}
+
+.div{
+    margin: 3rem;
+}
+h2{
+    padding: 1rem;
+    text-align: center;
+}
+
+.content-table {
+    justify-content: center;
+    border-collapse: collapse;
+    margin: 2rem 14rem;
+    font-size: 1em;
+    min-width: 800px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color:#A9DFBF;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .content-table tbody tr:hover {
+   
+   background-color: #FDEDEC ;
+  }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Add Package | Truvaile</title>
+    <link rel="icon" href="/Images/logo01.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style08.css">
+    <link rel="stylesheet" href="css/style07.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+     <style>
+        .save{
+           margin:1rem 3.5rem ;
+            }
+         tr, td{
+         margin-top: 1rem; 
+         }
+    </style>
+     <style>
+        .wrapper{
+  width: 600px;}
+
+    </style>
+</head>
+<body>
+<header class="main">
+        <div class="header-cotainer">
+           <div class="top-container">
+                <nav class="navigation container">
+                    <div class="nav-brand">Truvaile</div>
+                    <ul class="list-non-bullet nav-pills">
+                        <li class="list-item-inline">
+                            <a class="link" href="ViewUsers">Users List</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <a class="link link-active" href="ViewServlet">Packages</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <a class="link" href="ViewBookedPackages">Booked Packages </a>
+                        </li>
+                        <li class="list-item-inline">
+                            <a class="link " href="ViewFeedback">Feedback</a>
+                        </li>
+                        <li class="list-item-inline">
+                            <a class="link" href="AdminLogout">Logout</a>
+                        </li>
+                    </ul>
+                 </nav>
+            </div>
+         </div>
+       </header>
+
+ <a href="ViewServlet" style="margin-left:23rem; margin-bottom:4rem;  margin-top:4rem;text-decoration: none; font-size: large; text-transform: capitalize;">View All Packages</a>  
+
+<section class="loginform">
+    <div class="wrapper">
+        <div class="title">
+  Add New Package</div>
+  <form action="SaveServlet" method="POST">
+      <div class="field">
+         <input type='text' class="form" name='id'/>
+           <label>Package ID</label>
+      </div>
+      <div class="field">
+        <input type="text" class="form"  name="name"/>
+           <label>Package Name</label>
+      </div>
+       <div class="field">
+         <input type='text'  class="form"  name='type'/>
+            <label>Package Type</label>
+      </div>
+     <div class="field">
+         <input type='text'  class="form" name='inclusions'/>
+           <label>Package Inclusions</label>
+          </div>
+    <div class="field">
+          <input type='number'  class="form"  name='cost'/>
+            <label>Package Cost</label>
+          </div>
+   
+    <div class="field">
+          <select name="duration">  
+              <option>3D/4N</option>  
+              <option>4D/5N</option>  
+              <option>5D/6N</option>  
+              <option>6D/7N</option>  
+          </select>  
+            <label>Package Duration</label>
+          </div>
+     <br><br>
+    <div class="field">
+            <input type="submit" value="Save Package">
+          </div>
+ 
+  </form>
+  </div>
+</section>
+<footer class="footer">
+    
+    <div class="footer-header">
+        <div class="icon">
+           <i class="fas fa-chevron-up"></i></div>
+        <p>© 2020 Truvaile Trips Pvt Ltd.</p>
+    </div>
+    <ul class="social-link list-non-bullet">
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fab fa-linkedin-in"></i></a> 
+        </li>
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fab fa-facebook-f"></i></a> 
+        </li>
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fas fa-play"></i></a> 
+        </li>
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fab fa-instagram"></i></a> 
+        </li>
+        <li class="list-item-inline">
+            <a href="#" class="link"><i class="fab fa-twitter"></i></a> 
+        </li>
+    </ul>
+</footer></body></html>
+

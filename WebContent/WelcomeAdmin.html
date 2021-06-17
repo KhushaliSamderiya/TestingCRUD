@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login| Truvaile</title>
+	<link rel="stylesheet"  href="css/style06.css">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <img class="wave" src="Images/wave.png" >
+	<div class="nav-brand" style="color: black;padding-bottom: 1rem;padding-left: 5rem;margin-top: -0.5rem;">Truvaile</div>
+	<div class="container">
+	<div class="img">
+			<img src="Images/bg.svg">
+		</div>
+		
+		<div class="login-content">
+			<form action="AdminLogin" method="get">
+				<img src="Images/avatar.svg">
+				<h2 class="title" style="font-size: medium;">Welcome Admin</h2><br>
+         		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" name="username" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" name="password" class="input">
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login">
+			</form></div></div>
+    <script>
+        const inputs = document.querySelectorAll(".input");
+       
+		function addcl(){
+      	let parent = this.parentNode.parentNode;
+	     parent.classList.add("focus");
+       }
+
+       function remcl(){
+	    let parent = this.parentNode.parentNode;
+	      if(this.value == ""){
+		  parent.classList.remove("focus");
+	   }
+     }
+inputs.forEach(input => {
+	input.addEventListener("focus", addcl);
+	input.addEventListener("blur", remcl);
+}); </script>
+
+<footer class="footer">
+    <div class="footer-header">
+		<p style="text-align: center; margin-top: 1.5rem;">© 2020 Truvaile Trips Pvt Ltd.</p>
+   </div>
+    
+</footer>
+</body>
+</html>
